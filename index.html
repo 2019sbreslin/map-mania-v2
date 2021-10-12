@@ -1,12 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Map Mania v2</title>
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+<!--
+Author:  Sarah Breslin
+Class:   Web & Distributed Programming
+Project: Map Mania v1
+Map Mania 
+-->
 
-<h1>This is a Heading #1</h1>
-<p>This is a paragraph #1.</p>
+    <head>
+        <meta charset="UTF-8">
+        <title>Map Mania V1</title>
+        <link rel="stylesheet" href="map-mania.css"> 
+        <script src="map-mania.js" ></script>
 
-</body>
+    </head>
+    <body onload="initApplication()">
+        <h1>Map Mania</h1> 
+        
+        <div id="mapID"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUZZ5a-mzMDao_Z1tkdFilkIgLm78zI50&callback=initMap"
+        async defer>
+    </script>
+    </body>
 </html>
+
