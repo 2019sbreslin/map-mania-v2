@@ -9,18 +9,21 @@ Map Mania
 
     <head>
         <meta charset="UTF-8">
-        <title>Map Mania V1</title>
+        <title>Map Mania V2</title>
         <link rel="stylesheet" href="map-mania.css"> 
         <script src="map-mania.js" ></script>
 
     </head>
     <body onload="initApplication()">
         <h1>Map Mania</h1> 
-        
         <div id="mapID"></div>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUZZ5a-mzMDao_Z1tkdFilkIgLm78zI50&callback=initMap"
         async defer>
     </script>
+    <p id='demo' style = 'display: none'>The goal of the game is, for a given location, to zoom in closely such that the location is within the bounds of the map. Once you find that location, an icon will show up on the location, increasing your score. The map will reset, and they will be directed to search for the next new location. Once you have found all of the locations, you win!
+    </p>     
+    <button type='button' onclick="document.getElementById('demo').style.display='block'; this.style.display = 'none'" >Getting Started!</button>
+    
     </body>
 </html>
 
